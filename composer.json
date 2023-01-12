@@ -16,15 +16,16 @@
     "repositories": [
         {
           "type": "git",
-          "url": "https://github.com/marivaldojr/flysystem-backblaze.git"
+          "url": "https://github.com/andrewalkermo/flysystem-backblaze.git"
         }
     ],
     "require": {
-        "php": "^7.1.8",
-        "mhetreramesh/flysystem-backblaze": "dev-master"
+        "php": "^7.1.8 || ^8.0",
+        "mhetreramesh/flysystem-backblaze": "dev-php-8",
+        "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0"
     },
     "require-dev": {
-        "phpunit/phpunit" : "~4.0||~5.0",
+        "phpunit/phpunit" : "~4.0||~5.0||~6.0||~7.0||~8.0||~9.0",
         "scrutinizer/ocular": "~1.1",
         "squizlabs/php_codesniffer": "~2.3"
     },
@@ -51,5 +52,6 @@
                 "\\Gliterd\\BackblazeB2\\BackblazeB2ServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
